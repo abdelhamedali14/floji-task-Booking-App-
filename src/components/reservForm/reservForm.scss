@@ -1,0 +1,41 @@
+@import "../../assets/sass/Variables";
+
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  label {
+    font-size: 1rem;
+    color: $pargraphColor;
+  }
+  input {
+    padding: 0.6rem 0rem;
+    border-radius: 5px;
+    border: 1px solid rgb(187, 183, 183);
+    &:focus {
+      outline: none !important;
+      border: 1px solid skyblue;
+      box-shadow: 0 0 2px blue;
+    }
+  }
+  .error-message {
+    color: red;
+  }
+  .submit-btn {
+    margin-top: 1rem;
+    padding: 0.4rem 2rem 0.4rem 1.4rem;
+    margin-left: auto;
+    text-align: center;
+    font-size: 1rem;
+    background-color: #0071c2;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    transition: all 0.3s;
+    cursor: pointer;
+    &:hover{
+        background-color: #003580;
+    }
+  }
+}

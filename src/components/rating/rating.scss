@@ -1,0 +1,20 @@
+@import "../../assets/sass/Variables";
+.rating-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  .stars {
+    margin-top: 0.1rem;
+    .gold {
+      color: gold;
+    }
+  }
+  .rating-text {
+    font-weight: 600;
+    color: $pargraphColor;
+
+    .rate-number {
+      color: black;
+    }
+  }
+}

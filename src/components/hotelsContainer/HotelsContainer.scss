@@ -1,0 +1,39 @@
+
+@import "../../assets/sass/mixin";
+.hotelsContainer-wrapper {
+  padding: 4rem 0rem;
+  text-align: center;
+  .header {
+    padding: 1rem 0;
+    h2 {
+      font-size: 3rem;
+      font-family: robotoBold;
+      font-weight: bold;
+    }
+  }
+  .allHotels-wrapper {
+    width: 100%;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     gap: 1rem;
+    .hotel {
+      height: 100%;
+      @include mediaQ(xsm){
+        width: 100%;
+      }
+      @include mediaQ(sm){
+        width: 100%;
+      }
+   
+  
+      @include mediaQ(lg){
+        width:48%;
+      }
+      @include mediaQ(xlg){
+        width:45%;
+      }
+
+    }
+  }
+}

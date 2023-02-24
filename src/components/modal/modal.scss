@@ -1,0 +1,53 @@
+@import "../../assets/sass/Variables";
+
+body.active-modal {
+  overflow-y: hidden;
+}
+.modal-wrapper,
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  inset: 0;
+  z-index: 200;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .overlay {
+    background: rgba(49, 49, 49, 0.8);
+  }
+  .modal-content-wrapper {
+    inset: 0;
+    z-index: 200;
+    line-height: 1.4;
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 10px;
+    .modal-header {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1.5rem;
+      .close-modal {
+        cursor: pointer;
+        font-size: 1.5rem;
+        border-radius: 50%;
+        background-color: #ffffff;
+        margin-top: 0.5rem;
+        border-color: transparent;
+        &:hover {
+          color: $pargraphColor;
+        }
+      }
+    }
+  }
+  .medium {
+    width: 30%;
+    max-width: 100%;
+  }
+  .large{
+    width: 100%;
+    height: 100%;
+  }
+}
