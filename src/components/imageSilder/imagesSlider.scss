@@ -23,15 +23,15 @@
       text-align: center;
       text-transform: uppercase;
       @include mediaQ(xsm) {
-        font-size: 1rem;
+        font-size: 1.5rem;
         width: 90%;
       }   
       @include mediaQ(sm) {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         width: 70%;
       } 
       @include mediaQ(md) {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         width: 70%;
       } 
       @include mediaQ(lg) {
