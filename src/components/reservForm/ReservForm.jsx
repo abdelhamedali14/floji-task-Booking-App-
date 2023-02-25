@@ -17,17 +17,18 @@ import 'react-toastify/dist/ReactToastify.css';
 
 export const ReservForm = () => {
 
-    const { currentSelectedHotel, modalView, setModalView, setBookingConfirmed } = useContext(ControllerContext)
+    const { currentSelectedHotel, modalView, setModalView, setBookingConfirmed, BookingConfirmed } = useContext(ControllerContext)
 
-    const {  setuserBookings, userBookings } = useContext(UserContext);
-
+    const { setuserBookings, userBookings } = useContext(UserContext);
 
     const handleConfirmBooking = (userData) => {
-        const bookingId=Math.floor(Math.random() * (10001300))
+        const bookingId = Math.floor(Math.random() * (10001300))
 
         const currentBooking =
-            { bookedBy: userData,bookingId: bookingId, bookedDate: new Date(), bookInfo: currentSelectedHotel };
-        const currentBookedHotels = JSON.parse(JSON.stringify(userBookings)); 
+            { bookedBy: userData, bookingId: bookingId, bookedDate: new Date(), bookInfo: currentSelectedHotel };
+        const currentBookedHotels = JSON.parse(JSON.stringify(userBookings));
+
+
 
         // Add The Current Book To User Bookings
 
@@ -37,7 +38,13 @@ export const ReservForm = () => {
         setModalView(false);
         setBookingConfirmed(true);
     };
-    const notify = () => {toast.success(" thank you to booking with us ")};
+
+    const notify = () => {
+        if (BookingConfirmed) {
+            toast.success(" thank you to booking with us ")
+        } else
+            return
+    };
     //validate form
     const formik = useFormik({
         initialValues: {
@@ -63,8 +70,8 @@ export const ReservForm = () => {
     });
     return (
         <>
-            <Modal show={modalView} hide={setModalView}  header={"please finish this fields"} className="modal"
-            size={"medium"}
+            <Modal show={modalView} hide={setModalView} header={"please finish this fields"} className="modal"
+                size={"medium"}
                 content={<form onSubmit={formik.handleSubmit} className="form-wrapper">
                     <label htmlFor="userName">user name</label>
                     <input
@@ -97,14 +104,14 @@ export const ReservForm = () => {
                         value={formik.values.email}
                     />
                     {formik.touched.email && formik.errors.email ? <div className='error-message'>{formik.errors.email}</div> : null}
-              
-                  <button type="submit" className='submit-btn' onClick={notify}>confirm your Booking</button>
-              
+
+                    <button type="submit" className='submit-btn' onClick={notify}>confirm your Booking</button>
+
                 </form>} />
-                <ToastContainer
-                  autoClose={2000}
-                  theme="light"
-                />
+            <ToastContainer
+                autoClose={2000}
+                theme="light"
+            />
         </>
     )
 }

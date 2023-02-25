@@ -10,12 +10,9 @@ export const BookingList = () => {
     const { currentUser } = useContext(UserContext);
     const [userBookingsList, setUserBookingList] = useState([]);
     const { setbookingListView, bookingListView } = useContext(ControllerContext)
-
     useEffect(() => {
-
         setUserBookingList(currentUser.bookings);
     }, [currentUser.bookings]);
-    console.log(userBookingsList);
 
        //function to handel date
     const FormatData = (bookedDate) => {

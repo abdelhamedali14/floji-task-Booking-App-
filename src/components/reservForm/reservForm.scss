@@ -13,11 +13,18 @@
     padding: 0.6rem 0rem;
     border-radius: 5px;
     border: 1px solid rgb(187, 183, 183);
+
+    &::placeholder{
+      font-weight: bold;
+      opacity: 0.5;
+      color: red;
+    }
     &:focus {
       outline: none !important;
       border: 1px solid skyblue;
       box-shadow: 0 0 2px blue;
     }
+ 
   }
   .error-message {
     color: red;

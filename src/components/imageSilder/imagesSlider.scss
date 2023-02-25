@@ -16,15 +16,28 @@
     justify-content: center;
     .slides-content{
       color: yellow;
-      font-size: 2.5rem;
+    
       font-family: robotoBold;
       text-shadow: 4px 4px $mainColor;
-      width: 60%;
+     
       text-align: center;
       text-transform: uppercase;
-      
-   
-      
+      @include mediaQ(xsm) {
+        font-size: 1rem;
+        width: 90%;
+      }   
+      @include mediaQ(sm) {
+        font-size: 1.2rem;
+        width: 70%;
+      } 
+      @include mediaQ(md) {
+        font-size: 1.5rem;
+        width: 70%;
+      } 
+      @include mediaQ(lg) {
+        font-size: 2.5rem;
+        width: 60%;
+      } 
     }
   }
   .showArrows {
