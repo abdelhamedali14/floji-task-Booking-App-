@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/floji-task-Booking-App-/static/css/main.011b9090.css",
-    "main.js": "/floji-task-Booking-App-/static/js/main.d9b0adba.js",
+    "main.css": "/floji-task-Booking-App-/static/css/main.7c315ae5.css",
+    "main.js": "/floji-task-Booking-App-/static/js/main.a634c4e2.js",
     "static/js/787.dca3c7cd.chunk.js": "/floji-task-Booking-App-/static/js/787.dca3c7cd.chunk.js",
     "static/media/Roboto-Regular.ttf": "/floji-task-Booking-App-/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
     "static/media/Roboto-Bold.ttf": "/floji-task-Booking-App-/static/media/Roboto-Bold.f80816a5455d171f948d.ttf",
     "index.html": "/floji-task-Booking-App-/index.html",
-    "main.011b9090.css.map": "/floji-task-Booking-App-/static/css/main.011b9090.css.map",
-    "main.d9b0adba.js.map": "/floji-task-Booking-App-/static/js/main.d9b0adba.js.map",
+    "main.7c315ae5.css.map": "/floji-task-Booking-App-/static/css/main.7c315ae5.css.map",
+    "main.a634c4e2.js.map": "/floji-task-Booking-App-/static/js/main.a634c4e2.js.map",
     "787.dca3c7cd.chunk.js.map": "/floji-task-Booking-App-/static/js/787.dca3c7cd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.011b9090.css",
-    "static/js/main.d9b0adba.js"
+    "static/css/main.7c315ae5.css",
+    "static/js/main.a634c4e2.js"
   ]
 }
