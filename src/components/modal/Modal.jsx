@@ -27,7 +27,7 @@ export default function Modal({ content, header,size,show,hide }) {
                                 hide(false)
                             }}
                             >
-                                <BsXLg />
+                                <BsXLg  />
                             </button>
                         </div>
                         <div className="modal-content">
